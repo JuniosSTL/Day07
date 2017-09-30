@@ -13,7 +13,8 @@ public class CameraMove : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime);
-        transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, Time.deltaTime);
+        transform.position = target.position;
+//        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime);
+        //        transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, Time.deltaTime);
     }
 }
